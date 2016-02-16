@@ -5,9 +5,9 @@
     <version>1.0.85.9</version>
     <title>System.Data.SQLite (x86/x64)</title>
     <authors>SQLite Development Team</authors>
-    <owners>Mark Jordan</owners>
+    <owners>Red Gate</owners>
     <licenseUrl>http://www.sqlite.org/copyright.html</licenseUrl>
-    <projectUrl>http://system.data.sqlite.org/</projectUrl>
+    <projectUrl>https://github.com/red-gate/RedGate.ThirdParty.SQLite</projectUrl>
     <iconUrl>http://system.data.sqlite.org/images/sqlite32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Based on System.Data.SQLite mixed-bitness package, with additional wix fragments
