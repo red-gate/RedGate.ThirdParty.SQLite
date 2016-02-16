@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <!--
-    Add the content of the nuget package as linked items in the project file.
+    Add the SQLite.Interop.dll assemblies of the nuget package as linked items in the project file.
     + get them to be copied to the build output folder.
     -->
     <None Include="$(MSBuildThisFileDirectory)x64\SQLite.Interop.dll">
