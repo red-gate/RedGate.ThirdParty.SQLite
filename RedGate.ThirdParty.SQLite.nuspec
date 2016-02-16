@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RedGate.ThirdParty.SQLite</id>
+    <version>1.0.85.9</version>
+    <title>System.Data.SQLite (x86/x64)</title>
+    <authors>SQLite Development Team</authors>
+    <owners>Mark Jordan</owners>
+    <licenseUrl>http://www.sqlite.org/copyright.html</licenseUrl>
+    <projectUrl>http://system.data.sqlite.org/</projectUrl>
+    <iconUrl>http://system.data.sqlite.org/images/sqlite32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Based on System.Data.SQLite mixed-bitness package, with additional wix fragments
+
+The official SQLite database engine for both x86 and x64 along with the ADO.NET provider.</description>
+    <copyright>Public Domain</copyright>
+    <language>en-US</language>
+    <tags>sqlite database ado.net provider interop</tags>
+  </metadata>
+  <files>
+    <file src="lib\**" target="lib" />
+    <file src="wix2\**" target="wix2" />
+    <file src="wix3\**" target="wix3" />
+    <file src="build\**" target="build" />
+    <file src="RedGate.ThirdParty.SQLite.targets" target="build\net20" />
+    <file src="RedGate.ThirdParty.SQLite.targets" target="build\net40" />
+    <file src="RedGate.ThirdParty.SQLite.targets" target="build\net45" />
+  </files>
+</package>

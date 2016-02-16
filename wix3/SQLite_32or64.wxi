@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <DirectoryRef Id="INSTALLDIR">
+        <Component Id="SQLitemanaged" Guid="{5736ECEB-A22E-4EFC-B899-F47C17ADF077}">
+            <File Id="SQLitemanageddll" Source="System.Data.SQLite.DLL" />
+        </Component>
+
+        <?if $(env.ProcessorArchitecture)=x64 ?>
+        <Component Id="SQLiteinterop" Guid="{2A710DB6-4619-4B17-A1C6-EFC4282F451D}" Win64="yes">
+            <File Id="SQLite64interopdll" Name="System.Data.SQLite.DLL" Source="x64\SQLite.Interop.DLL" />
+        </Component>
+        <?else ?>
+        <Component Id="SQLiteinterop" Guid="{F3225F29-3175-4A38-AB8D-16FE6EAAB60E}">
+            <File Id="SQLite32interopdll" Name="System.Data.SQLite.DLL" Source="x86\SQLite.Interop.DLL" />
+        </Component>
+        <?endif ?>
+    </DirectoryRef>
+
+    <!-- These get installed as part of the main product -->
+    <FeatureRef Id="Product">
+        <ComponentRef Id="SQLitemanaged" />
+        <ComponentRef Id="SQLiteinterop" />
+    </FeatureRef>
+</Include>
