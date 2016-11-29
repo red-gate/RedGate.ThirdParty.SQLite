@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>RedGate.ThirdParty.SQLite</id>
-    <version>1.0.85.9</version>
+    <version>1.0.85.10</version>
     <title>System.Data.SQLite (x86/x64)</title>
     <authors>SQLite Development Team</authors>
     <owners>Red Gate</owners>
