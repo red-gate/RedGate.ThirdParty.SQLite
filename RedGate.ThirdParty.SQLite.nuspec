@@ -19,7 +19,6 @@ The official SQLite database engine for both x86 and x64 along with the ADO.NET 
   </metadata>
   <files>
     <file src="lib\**" target="lib" />
-    <file src="wix2\**" target="wix2" />
     <file src="wix3\**" target="wix3" />
     <file src="build\**" target="build" />
     <file src="RedGate.ThirdParty.SQLite.targets" target="build\net20" />
